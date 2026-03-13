@@ -1,7 +1,14 @@
 package com.pranay;
 
-public class Laptop{
-    public Laptop(){
-   System.out.println("Laptop object has been created");
-}
+public class Laptop implements Computer{
+    public Laptop() {
+        System.out.println("Laptop object created");
+    }
+
+    @Override
+    public void compile()
+    {
+        System.out.println("Compiling using Laptop");
+    }
+
 }
